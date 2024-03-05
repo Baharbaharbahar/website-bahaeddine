@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <code>
+        <pre class="brush: html notranslate" data-signature="z8gGrkc8GJR6t5fSwk1NnxuFoly/aJl+QjpZJegk9sI=">
+            var a;
+var op;
+function un ()
+{
+    ch=document.getElementById("ecran").value;
+    ch=ch+"1";
+    document.getElementById("ecran").value=ch;
+
+}
+function deux ()
+{
+    document.getElementById("ecran").value=document.getElementById("ecran").value+"2";
+}
+function plus()
+{
+    a=Number(document.getElementById("ecran").value);
+    document.getElementById("ecran").value="+";
+    op="+";
+}
+function moins()
+{
+    a=Number(document.getElementById("ecran").value);
+    document.getElementById("ecran").value="-";
+    op="-";
+}
+function egale()
+{
+    let b=Number(document.getElementById("ecran").value);
+    if(op=="+")
+    {
+        res=a+b;
+    }else
+    {
+        if(op=="-")
+        {
+            res=a-b;
+        }
+    }
+    document.getElementById("ecran").value=res.toString();
+
+}
+*-*-*-*-*-*-*-*-*-*--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*Tp calculatrice.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="fonctions.js"></script>
+</head>
+<body>
+    <form action="" method="post" name="f1">
+     
+        <table border="1">
+            <tr>
+                <td colspan="5"> <input  type="text" disabled name="ecran" id="ecran"  ></td>
+               
+            </tr>
+            <tr>
+                <td><input type ="button" value="7"></td>
+                <td><input type ="button" value="8"></td>
+                <td><input type ="button" value="9"></td>
+                <td><input type ="button" value="-" onclick="moins()"></td>
+                <td><input type ="reset" value="AC" ></td>
+            </tr>
+            <tr>
+                <td><input type ="button" value="4"></td>
+                <td><input type ="button" value="5"></td>
+                <td><input type ="button" value="6"></td>
+                <td><input type ="button" value="+" onclick="plus()"></td>
+                <td><input type ="button" value=""></td>
+            </tr>
+            <tr>
+                <td><input type ="button" value="1" onclick="un()"></td>
+                <td><input type ="button" value="2" onclick="deux()"></td>
+                <td><input type ="button" value="3"></td>
+                <td><input type ="button" value="*"></td>
+                <td><input type ="button" value=""></td>
+            </tr>
+            <tr>
+                <td><input type ="button" value="=" onclick="egale()"></td>
+                <td><input type ="button" value="0"></td>
+                <td><input type ="button" value="."></td>
+                <td><input type ="button" value="/"></td>
+                <td><input type ="button" value=""></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+        </pre>
+    </code>
+</body>
+</html>
